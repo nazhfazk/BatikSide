@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BatikSide. - Uniting Indonesian Culture</title>
+        <link rel="stylesheet" href="./assets/styles/style.css"/>
+        <link rel="stylesheet" href="./assets/styles/lightslider.css">
+        <!-- js-link -->
+        <script src="./assets/js/JQuery3.3.1.js"></script>
+        <script src="./assets/js/lightslider.js"></script>
+        <!-- fav icon -->
+        <link rel="icon" href="./assets/img/Artboard 1.png">
+        <!-- fontAwesome -->
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- navigation -->
+        <nav style="background-color: #fcdccd">
+            <a href="#" class="logo">
+                <img src="assets/img/Group_1.png"/>
+            </a>
+            <!-- menu-btn -->
+            <input type="checkbox" class="menu-btn" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!-- menu -->
+            <ul class="menu">
+                <li><a href="#" style="color: #9c7c55">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+            <!-- search -->
+            <div class="search" onClick="hyperlink()">
+                <input id="searchhome" type="text" placeholder="Find Your Batik Here..." onClick="hyperlink()" onKeyPress="hyperlink()" onKeyDown="hyperlink()" onKeyUp="hyperlink()"/>
+                <!-- search icon -->
+                <i class="fas fa-search"></i>
+            </div>
+        </nav>
+
+        <section id="main">
+        <!-- SHOWCASE -->
+        <section id="latest">
+            <h1 class="latest-heading">SHOWCASE</h1>
+            <!-- slider -->
+            <ul id="autoWidth2" class="cs-hidden">
+                <!-- slide-box 1 -->
+                <li class="item-a" onclick="ParangKusumo(batikModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/Parang Kusumo.jpg">
+                        </div>
+						
+                    </div>
+                </li>
+                <!-- slide-box 2 -->
+                <li class="item-b" onclick="MegaMendung(batikModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/Mega Mendung.jpg">
+                        </div>
+                    </div>
+                </li>
+                <!-- slide-box 3 -->
+                <li class="item-c" onclick="Sidomukti(batikModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/Sidomukti.jpg">
+                        </div>
+                    </div>
+                </li>
+                <!-- slide-box 4 -->
+                <li class="item-d" onclick="Sidoluhur(batikModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/Sidoluhur.jpg">
+                        </div>
+                    </div>
+                </li>
+                <!-- slide-box 5 -->
+                <li class="item-e" onclick="Tambal(batikModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/Tambal.jpg">
+                        </div>
+                    </div>
+                </li>
+                <!-- slide-box 6 -->
+                <li class="item-f" onclick="UlamsariMas(batikModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/Ulamsari Mas.jpg">
+                        </div>
+                    </div>
+                </li>
+                <!-- slide-box 7 -->
+                <li class="item-g" onclick="PringSedapur(batikModal)">
+                    <div class="latest-box">
+                        <!-- img -->
+                        <div class="latest-b-img">
+                            <img src="./assets/img/Pring Sedapur.jpg">
+                        </div>
+                    </div>
+                </li>
+              </ul>
+        </section>
+        <!-- Batik -->
+        <div class="Batik-heading" id="Batik">
+            <h2>Batik(n)</h2>
+			<h4 style="text-align: center">Kain bergambar yang pembuatannya secara khusus dengan menuliskan atau menerakan malam pada kain itu, kemudian pengolahannya diproses dengan cara tertentu.</h4>
+        </div>
+        <section id="Konten-Batik">
+            <p class="Batik-heading" style="text-align: center; margin-top: 50px; margin-bottom: 50px;">Batik adalah hasil karya bangsa Indonesia yang merupakan perpaduan antara seni dan teknologi oleh leluhur bangsa Indonesia. Batik Indonesia dapat berkembang hingga sampai pada suatu tingkatan yang tak ada bandingannya baik dalam desain/motif maupun prosesnya. Corak ragam batik yang mengandung penuh makna dan filosofi akan terus digali dari berbagai adat istiadat maupun budaya yang berkembang  di Indonesia. Motif Batik menurut Kamus Besar Bahasa Indonesia, motif adalah corak atau pola. Motif adalah suatu corak yang di bentuk sedemikian rupa hinga menghasilkan suatu bentuk yang beraneka ragam.</p>
+        </section>
+        <!-- batik-modal -->
+        <div id="batikModal" class="modal">
+            <!-- modal-content -->
+            <span class="close-modal">&times;</span>
+            <div class="modal-content">
+                <div class="batik-info">
+                    <img id="gambar" class="gambar-batik">
+    
+                    <div class="tentang-batik"> 
+                        <h3 id="nama-batik">Lorem Ipsum</h3>
+                        <p id="daerah">Lorem</p>
+                        <h4>Description:</h4>
+                        <p id="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer style="background-color: #fcdccd;">
+		
+        </footer>
+        <!-- slider-script -->
+        <script src="./assets/js/script.js"></script>
+        <script>
+             $(document).ready(function() {
+                $('#autoWidth,#autoWidth2').lightSlider({
+                    autoWidth:true,
+                    loop:true,
+                    onSliderLoad: function() {
+                        $('#autoWidth,#autoWidth2').removeClass('cs-hidden');
+                    } 
+                });  
+            });
+        </script>
+	</section>
+    </body>
+</html>

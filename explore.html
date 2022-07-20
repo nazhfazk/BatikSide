@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BatikSide. - Uniting Indonesian Culture</title>
+        <link rel="stylesheet" href="./assets/styles/style.css"/>
+        <link rel="stylesheet" href="./assets/styles/lightslider.css">
+        <!-- js-link -->
+        <script src="./assets/js/JQuery3.3.1.js"></script>
+        <script src="./assets/js/lightslider.js"></script>
+        <!-- fav icon -->
+        <link rel="icon" href="./assets/img/Artboard 1.png">
+        <!-- fontAwesome -->
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body style="position: relative">
+        <!-- navigation -->
+        <nav style="background-color: #fcdccd">
+            <a href="index.html" class="logo">
+                <img src="assets/img/Group_1.png"/>
+            </a>
+            <!-- menu-btn -->
+            <input type="checkbox" class="menu-btn" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <!-- menu -->
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#" style="color: #9c7c55">Explore</a></li>
+				<li><a1 style="width: 430px;height: 40px; display: flex;justify-content: center;align-items: center;border-radius: 20px;padding: 0px 20px;"></a1></li>
+            </ul>
+            
+        </nav>
+
+        <section id="main">
+        <!-- Search -->
+        <section id="Explore">
+            <h1 class="latest-heading" style="text-align: center; font-size: 40px">EXPLORE</h1>
+            <!-- search -->
+				<div class="searchex" style="display: flex;margin-left: auto;margin-right: auto;">                
+					<input type="text" id="searchitem" onKeyUp="searchbatik()" placeholder="Find Your Batik Here..."/>                
+					<!-- search icon -->                
+					<i class="fas fa-search"></i>            
+				</div>
+        </section>
+		<section id="Explore-Description">
+			 <div class="Batik-heading" id="Batik">
+			<h4 style="text-align: center; margin-top: 50px; margin-bottom: 25px;">Explore vast variety of Indonesian batik in Our Page</h4>
+        </div>	
+		</section>
+        <!-- Explore Batik -->
+        <a1 style="width: 100vh;height: 100vh; min-height:100vh">
+          <section id="batik-list" style="min-height:100%">
+            <ul id="list-batik" style="list-style-type:none; margin: 0 auto; min-height:100%">
+              <!-- Batik-1 -->
+              <li class="ParangKusumo" onclick="ParangKusumo(batikModal)">
+                <a href="#">
+                  <div class="latest-box">                        
+                    <!-- img -->                        
+                    <div class="latest-b-img">                            
+                      <img src="./assets/img/Parang Kusumo.jpg">                        
+                    </div>
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Parang Kusumo</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-2 -->
+              <li class="MegaMendung" onclick="MegaMendung(batikModal)">
+                <a href="#">
+                  <div class="latest-box">                        
+                    <!-- img -->                        
+                    <div class="latest-b-img">                            
+                      <img src="./assets/img/Mega Mendung.jpg">                        
+                      </div>
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Mega Mendung</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-3 -->
+              <li class="Sidomukti" onclick="Sidomukti(batikModal)">
+                <a href="#">
+                  <div class="latest-box">                        
+                    <!-- img -->                        
+                    <div class="latest-b-img">                            
+                      <img src="./assets/img/Sidomukti.jpg">                       
+                      </div>   
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Sidomukti</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-4 -->
+              <li class="Sidoluhur" onclick="Sidoluhur(batikModal)">
+                <a href="#">
+                  <div class="latest-box">                        
+                    <!-- img -->                       
+                    <div class="latest-b-img">                        
+                      <img src="./assets/img/Sidoluhur.jpg">              
+                      </div> 
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Sidoluhur</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-5 -->
+              <li class="Tambal" onclick="Tambal(batikModal)">
+                <a href="#">
+                  <div class="latest-box">         
+                    <!-- img -->                
+                    <div class="latest-b-img">     
+                      <img src="./assets/img/Tambal.jpg">       
+                      </div>
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Tambal</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-6 -->
+              <li class="UlamsariMas" onclick="UlamsariMas(batikModal)">
+                <a href="#">
+                  <div class="latest-box">                
+                    <!-- img -->                     
+                    <div class="latest-b-img">          
+                      <img src="./assets/img/Ulamsari Mas.jpg">  
+                      </div>
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Ulamsari Mas</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-7 -->
+              <li class="PringSedapur" onclick="PringSedapur(batikModal)">
+                <a href="#">
+                  <div class="latest-box">  
+                    <!-- img -->          
+                    <div class="latest-b-img">   
+                      <img src="./assets/img/Pring Sedapur.jpg">  
+                      </div>
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Pring Sedapur</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-8 -->
+              <li class="TujuhRupa" onclick="TujuhRupa(batikModal)">
+                <a href="#">
+                  <div class="latest-box">  
+                    <!-- img -->          
+                    <div class="latest-b-img">   
+                      <img src="./assets/img/Tujuh Rupa.jpg">  
+                      </div>
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Tujuh Rupa</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-9 -->
+              <li class="Lasem" onclick="Lasem(batikModal)">
+                <a href="#">
+                  <div class="latest-box">  
+                    <!-- img -->          
+                    <div class="latest-b-img">   
+                      <img src="./assets/img/Lasem.jpg">  
+                      </div> 
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Lasem</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-10 -->
+              <li class="SingaBarong" onclick="SingaBarong(batikModal)">
+                <a href="#">
+                  <div class="latest-box">  
+                    <!-- img -->          
+                    <div class="latest-b-img">   
+                      <img src="./assets/img/Singa Barong.jpg">  
+                      </div>
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Singa Barong</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-11 -->
+              <li class="SekarJagad" onclick="SekarJagad(batikModal)">
+                <a href="#">
+                  <div class="latest-box">  
+                    <!-- img -->          
+                    <div class="latest-b-img">   
+                      <img src="./assets/img/Sekar Jagad.jpg">  
+                      </div> 
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Sekar Jagad</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-12 -->
+              <li class="JagatanPisang" onclick="JagatanPisang(batikModal)">
+                <a href="#">
+                  <div class="latest-box">  
+                    <!-- img -->          
+                    <div class="latest-b-img">   
+                      <img src="./assets/img/Jagatan Pisang.jpg">  
+                      </div>
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Jagatan Pisang</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-13 -->
+              <li class="Priyangan" onclick="Priyangan(batikModal)">
+                <a href="#">
+                  <div class="latest-box">  
+                    <!-- img -->          
+                    <div class="latest-b-img">   
+                      <img src="./assets/img/Priyangan.jpg">  
+                      </div>
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Priyangan</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-14 -->
+              <li class="Garutan" onclick="Garutan(batikModal)">
+                <a href="#">
+                  <div class="latest-box">  
+                    <!-- img -->          
+                    <div class="latest-b-img">   
+                      <img src="./assets/img/Garutan.jpg">  
+                      </div>
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Garutan</p>
+                    </div>
+                </a>
+                </li>
+              <!-- Batik-15 -->
+              <li class="Tubo" onclick="Tubo(batikModal)">
+                <a href="#">
+                  <div class="latest-box">  
+                    <!-- img -->          
+                    <div class="latest-b-img">   
+                      <img src="./assets/img/Tubo.jpg">  
+                      </div>
+                    <p style="text-align: center; margin: 5px; text-decoration: none; color: black;">Tubo</p>
+                    </div>
+                </a>
+                </li>
+              </ul>
+          </section>
+        </a1>
+			<section id="Explore-Description-Bawah" style="">
+			 <!-- Batik -->
+        <div class="Batik-heading" id="Batiks">
+			<h4 style="text-align: center; margin-top: 50px; margin-bottom: 25px;">explorasi beragam batik dari berbagai daerah di indonesia<br>
+			dalam website ini tersedia beragam jenis batik dengan informasi mulai dari deskripsi hingga asal nya.<br>
+			support soial media kami juga agar kami dapat mengembangkan web ini kedepannya<br>
+berikan ulasan melalui Kontak Kami:<br><br>Email: batikside@gmail.com<br>Instagram: Batik.Side<br>Twitter: BatikSide</h4>
+        </div>
+			</section>
+        <!-- batik-modal -->
+        <div id="batikModal" class="modal">
+            <!-- modal-content -->
+            <span class="close-modal">&times;</span>
+            <div class="modal-content">
+                <div class="batik-info">
+                    <img id="gambar" class="gambar-batik">
+    
+                    <div class="tentang-batik"> 
+                        <h3 id="nama-batik">Lorem Ipsum</h3>
+                        <p id="daerah">Lorem</p>
+                        <h4>Description:</h4>
+                        <p id="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- slider-script -->
+        <script src="./assets/js/script.js"></script>
+        <script>
+             $(document).ready(function() {
+                $('#autoWidth,#autoWidth2').lightSlider({
+                    autoWidth:true,
+                    loop:true,
+                    onSliderLoad: function() {
+                        $('#autoWidth,#autoWidth2').removeClass('cs-hidden');
+                    } 
+                });  
+            });
+        </script>
+	</section>
+    </body>
+		 <!-- footer -->
+        <footer style="background-color: #fcdccd;">
+        </footer>
+</html>
